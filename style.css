@@ -1,0 +1,173 @@
+#margin {
+    background-color: #E91E63;
+    border-style:none;
+    height: 4px;
+    width: 50px;
+}
+html, body {
+    overflow-x:hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.header.dark-mode, .menu-buttons.dark-mode, .skills.dark-mode {
+    background-color: black;
+    color: white;
+}
+h1, h2,h3,h4,h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color:rgb(44, 62, 80) ;   
+}
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5 {
+    color: rgb(236, 240, 241); /* Lighter color for dark mode */
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:right;
+    padding: 10px 20px;
+    color: blue;
+    position: fixed;
+    z-index: 2;
+}
+@media (max-width: 768px) {
+    .header-name h2 { font-size: 18px;}
+
+    .menu-buttons a {font-size: 14px;}
+
+    .skill-name, .skill-percent { font-size: 12px;}
+
+    .about img {
+        width: 100%;
+        height: auto;}
+
+    .dropdown-menu { text-align: center;}
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .header-name h2 {font-size: 20px; }
+    .menu-buttons a {font-size: 16px;}
+    .about img {
+        width: 75%;
+        height: auto; }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents inline spacing issues */
+}
+.header-name h2{
+    color: rgb(44, 62, 80);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.menu-buttons a {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: grey;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu-buttons a:hover {
+    background-color: white;
+    color: rgb(207, 30, 118);
+}
+
+/* Hamburger Menu */
+.menu-icon {
+    font-size: 24px;
+    color: rgb(44, 2, 2);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+.menu-icon::after{
+    content: none;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    list-style: none;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.dropdown-menu li {
+    margin: 5px 0;
+}
+.dropdown-menu li a {
+    color: grey;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+.dropdown-menu li a:hover {
+    background-color: white;
+    color:rgb(207, 30, 118) ;
+}
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+.skill-name {
+    width: 20%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e; 
+    text-transform: uppercase;
+}
+
+.skill-percent {
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #34495e; 
+    margin-left: 530px;
+}
+.skill-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #eaeaea; 
+}
+
+.skill-bar .progress {
+    height: 100%;
+    background-color: #E91E63; 
+}
+.col-sm-6 {
+    width: 48%;
+}
