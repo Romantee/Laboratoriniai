@@ -4,7 +4,9 @@ function toggleDropdown() {
 }
 function myFunction() {
     var element = document.body;
+    var element2 = document.querySelector('.header');
     element.classList.toggle("dark-mode");
+    element2.classList.toggle("dark-mode")
  }
  window.addEventListener('load', () => {
   const scrollTop = document.getElementById('scroll-top');
