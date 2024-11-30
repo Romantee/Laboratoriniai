@@ -177,6 +177,9 @@ img {
     color: #34495e; 
     text-transform: uppercase;
 }
+body.dark-mode .skill-name, body.dark-mode .skill-percent{
+    color: #eaeaea;
+}
 
 .skill-percent {
     width: 15%;
@@ -195,14 +198,63 @@ img {
 .skill-bar .progress {
     height: 100%;
     background-color: #E91E63; 
+    border-radius: 0;
 }
 .col-sm-6 {
     width: 48%;
 }
+/*Resume---------------------------------------------------------------------*/
+.resume{
+    background-color:#f2f6f9;
+  }
+body.dark-mode section{
+    background-color: rgb(32, 32, 35);
+}
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #E91E63;
+    position: relative;
+  }
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: color-mix(in srgb, grey, transparent 20%);
+    margin-bottom: 10px;
+  }
+.resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+.resume .resume-item ul {
+    padding-left: 20px;
+  }
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: whitesmoke;
+    border: 2px solid #E91E63;
+  }
      /*Footers ----------------------------------------------------*/
 .footer {
   color: #5a656e;
-  background-color: rgb(238, 235, 235);
+  background-color: #f2f6f9;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
