@@ -9,6 +9,7 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 200;
 }
+/*--------------------*/
 body.dark-mode {
     background-color: black;
     color: white;
@@ -31,6 +32,7 @@ body.dark-mode h4,
 body.dark-mode h5 {
     color: rgb(236, 240, 241); /* Lighter color for dark mode */
 }
+/*----------------------------------------------------------------------------*/
 .header {
     width: 100%;
     display: flex;
@@ -43,15 +45,11 @@ body.dark-mode h5 {
 }
 @media (max-width: 768px) {
     .header-name h2 { font-size: 18px;}
-
     .menu-buttons a {font-size: 14px;}
-
     .skill-name, .skill-percent { font-size: 12px;}
-
     .about img {
         width: 100%;
         height: auto;}
-
     .dropdown-menu { text-align: center;}
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -71,6 +69,7 @@ img {
     font-weight: bold;
     letter-spacing: 1px;
 }
+/*-------------------------------------------------------------------------*/
 .menu-buttons a {
     font-family:Arial, Helvetica, sans-serif;
     padding: 8px 16px;
@@ -135,7 +134,7 @@ img {
     cursor: pointer;
     font-size: 24px;
 }
-
+/*-------------------------------------------------------------------*/
 .container {
     width: 100%;
     margin: auto;
@@ -170,4 +169,81 @@ img {
 }
 .col-sm-6 {
     width: 48%;
+}
+     /*Footers ----------------------------------------------------*/
+.footer {
+  color: #5a656e;
+  background-color: rgb(238, 235, 235);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+body.dark-mode footer{
+    background-color: rgb(32, 32, 35);
+}
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+.footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.footer .social-links {
+  margin: 0 0 30px 0;
+}
+.footer .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E91E63;
+  color: white;
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.footer .social-links a:hover {
+  background: color-mix(in srgb, #E91E63, transparent 30%);
+  text-decoration: none;
+}
+/*--------------------------------------------------------------------------------*/
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background-color: #e91e63;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+.scroll-top i {
+    font-size: 24px;
+    color: white;
+}
+.scroll-top:hover {
+    background: color-mix(in srgb, #E91E63, transparent 50%);
+    text-decoration: none;
+    color: white;
 }
