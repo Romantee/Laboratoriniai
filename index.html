@@ -21,35 +21,34 @@
     <!-- Header -->
     <header class="header">
         <div class="header-name">
-            <h2>Resume</h2>
+            <h2>My Resume</h2>
         </div>
-
+        <div id="txt"></div>
         <!-- Desktop Navigation -->
         <div class="menu-buttons d-none d-md-flex">
-            <button onclick="myFunction()">Dark mode</button>
+            <button class="btn" id="btn" onclick="myFunction()"> ◐ </button>
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
             <a href="#resume">Resume</a>
-            <a href="#resume">Contact</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <!-- Mobile Dropdown -->
         <div class="dropdown d-md-none">
-            <button onclick="myFunction()">Dark mode</button>
+            <button class="btn" id="" onclick="myFunction()">◐</button>
             <button onclick="toggleDropdown()">☰</button>
             <ul class="dropdown-menu" id="dropdownMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
-    <body>
+    <body onload="startTime()" >
+
     <div class="home" id="home">
         <div id="jumbotron">
             <img src="nuotraukos/jumbotronas.jpg" id="jumbotron-image" alt="Jumbotron Background">
@@ -205,7 +204,7 @@
         </div>
     </section>
 
-    <div class="Portolio"  id="porfolio">
+    <div class="Portolio"  id="portfolio">
         <h2><br>Rortfolio</h2>
             <hr id="margin">
         <p>dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. 
@@ -213,32 +212,27 @@
         Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         
     </div>
-    <div class="Services" id="services">
-        <h2><br>Services</h2>
-            <hr id="margin">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0?si=SnqcnWjACPlX6Sy1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-        gyroscope; picture-in-picture; web-share"
-         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-         </audio>
-         <video width="320" height="240" controls>
-            <source src="video.mp4" type="video/mp4">
-         </video>
-    </div>
-    <div class="Contact" id="contact">
-        <h2><br>Contacts</h2>
+    <div class="contact" id="contact">
+        <h2><br>Contact</h2>
             <hr id="margin">
     </div>
-   
+
     <footer id="footer" class="footer light-background">
-        <h3 class="sitename">Resume</h3>
+        <h3 class="sitename">My Resume</h3>
         <div class="social-links d-flex justify-content-center">
             <a href="https://www.facebook.com/vilniustech/" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/vilniustech/" class="fa fa-instagram"></a>
             <a href="https://www.youtube.com/channel/UCW4UCKB80NlgnD7SBJZMAlQ" class="fa fa-youtube"></a>
             <a href="https://www.linkedin.com/school/vilniustech/" class="fa fa-linkedin"></a>
+        </div>
+        <div class="contacts">
+            <h5>Contacts</h5>
+            <li>Telephone: +3706123456</li>
+            <li>Email: email@gmail.com</li>
+            <li>Website: <a href="https://vilniustech.lt/">Vilnius tech</a></li>
+        </div>
+        <div class="credits">
+            Designed by Romantė Šiupšinskaitė EEf-23
         </div>
     </footer>
     <a href="#" id="scroll-top" class="scroll-top">

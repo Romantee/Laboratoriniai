@@ -27,7 +27,7 @@ body.dark-mode h2,
 body.dark-mode h3, 
 body.dark-mode h4, 
 body.dark-mode h5 {
-    color: rgb(236, 240, 241); /* Lighter color for dark mode */
+    color: lightblue; /* Lighter color for dark mode */
 }
 /*----------------------------------------------------------------------------*/
 .header {
@@ -43,7 +43,7 @@ body.dark-mode h5 {
 
 .header.dark-mode, .menu-buttons.dark-mode, .skills.dark-mode {
     background-color: black;
-    color: white;
+    color: lightblue;
 }
 @media (max-width: 768px) {
     .header-name h2 { font-size: 18px;}
@@ -72,13 +72,53 @@ img {
     letter-spacing: 1px;
 }
 /*-------------------------------------------------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 10px;
+    border: #E91E63;
+    border-radius: 5px; 
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #ec83af; /* Darker blue on hover */
+}
+body.dark-mode .btn{
+    background-color: f2f6f9 ;
+    color: #f2f6f9;
+}
+/*---------------------------------------------------------*/
+#txt{
+    font-family:'Times New Roman', Times, serif;
+      font-size: 20px;
+      color: #E91E63;
+      background: #f2f6f9;
+      padding: 10px;
+      border-radius: 10px;
+      animation: pulse 1s infinite;
+      box-shadow: 0 0 10px #ec83af, 0 0 10px #ec83af;
+}
+body.dark-mode #txt{
+    background-color: lightblue;
+    color: black;
+}
+/* -------------------------------------------------------- */
 .menu-buttons a {
+    display: inline-block;
     font-family:Arial, Helvetica, sans-serif;
     padding: 8px 16px;
     font-size: 16px;
     color: grey;
     text-decoration: none;
     transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+body.dark-mode .menu-buttons a{
+    color: lightblue;
+
 }
 .menu-buttons a:hover {
     background-color: whitesmoke;
@@ -178,7 +218,7 @@ img {
     text-transform: uppercase;
 }
 body.dark-mode .skill-name, body.dark-mode .skill-percent{
-    color: #eaeaea;
+    color: lightcyan;
 }
 
 .skill-percent {
@@ -298,6 +338,16 @@ body.dark-mode footer{
   background: color-mix(in srgb, #E91E63, transparent 30%);
   text-decoration: none;
 }
+.footer .contacts {
+    padding-top: 25px;
+    padding-bottom: 0;
+    border-top: 1px solid color-mix(in srgb, black, transparent 80%);
+  }
+  
+  .footer .credits {
+    font-size: 13px;
+    padding-top: 5px;
+  }
 /*--------------------------------------------------------------------------------*/
 .scroll-top {
     position: fixed;
