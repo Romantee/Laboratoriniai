@@ -89,7 +89,7 @@ body.dark-mode .btn{
     background-color: f2f6f9 ;
     color: #f2f6f9;
 }
-/*---------------------------------------------------------*/
+/*CLOCK---------------------------------------------------------*/
 #txt{
     font-family:'Times New Roman', Times, serif;
       font-size: 20px;
@@ -103,6 +103,7 @@ body.dark-mode .btn{
 body.dark-mode #txt{
     background-color: lightblue;
     color: black;
+    box-shadow: 0 0 10px darkblue, 0 0 10px #ec83af
 }
 /* -------------------------------------------------------- */
 .menu-buttons a {
@@ -290,23 +291,8 @@ body.dark-mode section{
     top: 0;
     background: whitesmoke;
     border: 2px solid #E91E63;
+/*-----------------------------------------------------------------------*/
   }
-  /* Formulė ------------------------------------------------------
-  .formula-container {
-    margin-top: 20px;
-    text-align: left; 
-    background-color: #e1e1e1; 
-    padding: 10px; 
-    border: 2px solid #868686;
-    border-radius: 5px; 
-    font-size: 1.2em; 
-    display: inline-block;
-}
-.formula-container math {
-    display: block;
-    margin: 0;
-    text-align: left;
-}*/
 math {
     margin-top: 20px;
     text-align: center; 
@@ -315,12 +301,15 @@ math {
     border-radius: 5px; 
     font-size: 1.2em; 
     display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px;
     box-shadow: 0px 2px 5px rgba(26, 0, 0, 0.3);
 }
-
-
+body.dark-mode math{
+    background-color:#5a656e ; 
+}
+/*--------------------------------------------------------------------*/
+.phone.call:hover{
+    fill:#e91e63
+}
      /*Footers ----------------------------------------------------*/
 .footer {
   color: #5a656e;
