@@ -270,12 +270,11 @@
         <div class="container section title" data-aos="fade-up">
             <h2><br>Contact</h2>
             <hr id="margin">
-            <p> random text </p>
+            <p><br></p>
         </div>
         <div class="container" data-aos="fade" data-aos-delay="100">
             <div class="row gy-4">
                 <div class="col-lg-4">
-
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
@@ -283,7 +282,6 @@
                           <p>Plytinės g. 27, Vilnius</p>
                         </div>
                       </div>
-                    
                       <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                         <i class="bi bi-telephone flex-shrink-0"></i>
                         <div>
@@ -291,7 +289,6 @@
                           <p>+37061234567</p>
                         </div>
                       </div>
-                      
                       <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
@@ -299,10 +296,16 @@
                           <p>email@gmail.com</p>
                         </div>
                       </div>
+                      <div>
+                        <h5 style="margin-top: 100px; text-align: center; line-height: 2; max-width: 300px;">
+                            We kindly invite you to insert your personal details and participate in this completely random questionnaire, 
+                            where you'll be rating your answers on a scale from 1 to 10.
+                        </h5>
+                    </div>
                 </div>
-
                 <div class="col-lg-8">
-                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                    <form  method="post" class="php-email-form" id="contactForm" data-aos="fade-up" data-aos-delay="200">
+                        <label>Personal details:</label>
                       <div class="row gy-4">
         
                         <div class="col-md-6">
@@ -324,16 +327,39 @@
                         <div class="col-md-12">
                             <input type="text" class="form-control" name="adress" placeholder="Adress" required="">
                           </div>
-                          
+
+                          <div class="col-md-6">
+                            <label for="websiteRating">How beautiful is this website?</label>
+                            <input type="range" id="websiteRating" name="websiteRating" min="1" max="10" required>
+                            <span id="websiteValue" class="value-display">5</span>
+                        
+                            <label for="catsRating" class="me-2">How much do you like cats?</label>
+                            <input type="range" id="catsRating" name="catsRating" min="1" max="10" required>
+                            <span id="catsValue" class="value-display">5</span>
+                        
+                            <label for="dogsRating" class="me-2">How much do you like dogs?</label>
+                            <input type="range" id="dogsRating" name="dogsRating" min="1" max="10" required>
+                            <span id="dogsValue" class="value-display">5</span>
+                        
+                            <label for="travelRating" class="me-2">How much do you enjoy traveling?</label>
+                            <input type="range" id="travelRating" name="travelRating" min="1" max="10" required>
+                            <span id="travelValue" class="value-display">5</span>
+                        
+                            <label for="codingRating" class="me-2">How much do you enjoy coding/programming?</label>
+                            <input type="range" id="codingRating" name="codingRating" min="1" max="10" required>
+                            <span id="codingValue" class="value-display">5</span>
+                        </div>
+                        
                         <div class="col-md-12 text-center">
-                          <div class="loading">Loading</div>
-                          <div class="error-message"></div>
-                          <div class="sent-message">Your message has been sent. Thank you!</div>
-        
-                          <button type="submit">Send Message</button>
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        
+                            <button type="submit">Send Message</button>
                         </div>
                       </div>
                     </form>
+                    <div id="formOutput" style="margin-top: 20px;"></div>
                   </div>
             </div>
         </div>
@@ -348,12 +374,6 @@
             <a href="https://www.youtube.com/channel/UCW4UCKB80NlgnD7SBJZMAlQ" class="fa fa-youtube"></a>
             <a href="https://www.linkedin.com/school/vilniustech/" class="fa fa-linkedin"></a>
         </div>
-        <!--<div class="contacts">
-            <h5>Contacts</h5>
-            <li>Telephone: +3706123456</li>
-            <li>Email: email@gmail.com</li>
-            <li>Website: <a href="https://vilniustech.lt/">Vilnius tech</a></li>
-        </div> -->
         <div class="credits">
             Designed by Romantė Šiupšinskaitė EEf-23
         </div>

@@ -1,5 +1,5 @@
 #margin {
-    background-color: #E91E63;
+    background-color:#E91E63;
     border-style:none;
     height: 4px;
     width: 50px;
@@ -308,9 +308,7 @@ body.dark-mode math{
 }
 /*Contact--------------------------------------------------------------------*/
 .contact .info-item+.info-item {
-    margin-top: 40px;
-  }
-  
+    margin-top: 40px; }
   .contact .info-item i {
     color: #e91e63;
     background: color-mix(in srgb,#e91e63 , transparent 92%);
@@ -324,29 +322,24 @@ body.dark-mode math{
     transition: all 0.3s ease-in-out;
     margin-right: 15px;
   }
-  
   .contact .info-item h3 {
     padding: 0;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px;
   }
-  
   .contact .info-item p {
     padding: 0;
     margin-bottom: 0;
     font-size: 14px;
   }
-  
   .contact .info-item:hover i {
     background: #e91e63;
     color: #e91e63;
   }
-  
   .contact .php-email-form {
     height: 100%;
   }
-  
   .contact .php-email-form input[type=text],
   .contact .php-email-form input[type=email],
   .contact .php-email-form textarea {
@@ -358,19 +351,16 @@ body.dark-mode math{
     background-color: color-mix(in srgb, #ffffff, transparent 50%);
     border-color: color-mix(in srgb, #5a656e, transparent 80%);
   }
-  
   .contact .php-email-form input[type=text]:focus,
   .contact .php-email-form input[type=email]:focus,
   .contact .php-email-form textarea:focus {
     border-color: #e91e63;
   }
-  
   .contact .php-email-form input[type=text]::placeholder,
   .contact .php-email-form input[type=email]::placeholder,
   .contact .php-email-form textarea::placeholder {
     color: color-mix(in srgb,black , transparent 20%);
   }
-  
   .contact .php-email-form button[type=submit] {
     color: #ffffff;
     background:#e91e63;
@@ -379,10 +369,52 @@ body.dark-mode math{
     transition: 0.4s;
     border-radius: 50px;
   }
-  
   .contact .php-email-form button[type=submit]:hover {
     background: color-mix(in srgb, #e91e63, transparent 25%);
   }
+
+  /*-----------------------------------------------------------------*/
+  .php-email-form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+php-email-form button {
+    background: #e91e63; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: color-mix(in srgb, #ffffff, transparent 50%);
+    border-color: color-mix(in srgb, #5a656e, transparent 80%)
+}
+
+.php-email-form button:hover {
+    background: #e91e63;   
+}
+.php-email-form .row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+.php-email-form .col-md-6 {
+    flex: 1 1 calc(50% - 15px); 
+    min-width: 250px;
+}
+
+.value-display {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 0.5em;
+    background: #E91E63;
+}
      /*Footers ----------------------------------------------------*/
 .footer {
   color: #5a656e;
@@ -430,11 +462,6 @@ body.dark-mode footer{
   background: color-mix(in srgb, #E91E63, transparent 30%);
   text-decoration: none;
 }
-/*.footer .contacts {
-    padding-top: 25px;
-    padding-bottom: 0;
- }*/
-  
   .footer .credits {
     font-size: 13px;
     padding-top: 5px;
